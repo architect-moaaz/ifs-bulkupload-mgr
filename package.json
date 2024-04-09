@@ -1,0 +1,44 @@
+{
+  "name": "ifs-bulkupload-mgr",
+  "version": "1.0.0",
+  "description": "Intelliflow bulkupload Manager",
+  "main": "dist/server.js",
+  "scripts": {
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon ./dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "ts-node ./src/server.ts",
+    "start": "concurrently \"npm run watch-ts\" \"npm run watch-node\"",
+    "prod": "npm run build && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "axios": "^0.27.2",
+    "body-parser": "^1.18.3",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.4.0",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.5",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^1.18.9",
+    "qs": "^6.10.3",
+    "read-excel-file": "^5.4.4",
+    "request": "^2.88.2",
+    "typescript": "^3.9.7",
+    "uuid": "^8.3.2",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "@types/multer": "^1.4.7",
+    "@types/node": "^14.0.23"
+  }
+}
